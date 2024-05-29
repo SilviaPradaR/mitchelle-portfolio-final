@@ -1,6 +1,6 @@
 function soundPlay() {
   var sound = new Audio();
-  sound.src = './light-switch-81967.mp3'; // source of the audio file
+  sound.src = 'light-switch-81967.mp3'; // source of the audio file
   sound.play(); // play the audio
 }
 
