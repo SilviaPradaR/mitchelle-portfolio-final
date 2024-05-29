@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the Font Awesome stylesheet for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    
+    <!-- Link to the CSS files -->
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Title of the HTML document, displayed in the browser tab -->
+    <title>MyPortfolio</title> 
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+         <!-- Navigation bar -->
+        <nav>
+            <!-- My name -->
+            <h4>MITCHELLE MORA</h4>
+
+            <!-- Checkbox for mobile navigation toggle -->
+            <input type="checkbox" name="" id="check">
+
+            <!-- Label for the mobile navigation toggle button -->
+            <label for="check" class="checkbtn">
+                <!-- Hamburger icon for the toggle button -->
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <!-- Navigation links list -->
+            <ul class="navigation-bar" id="menu-links">
+                <!-- Navigation links -->
+                <li><a href="#home" class="">Home</a></li>
+                <li><a href="#aboutme" class="">About me</a></li>
+                <li><a href="#gallery" class="">Gallery</a></li>
+                <li><a href="#contact" class="">Contact me!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section containing the different segments of the portfolio -->
+    <main>
+        <!-- Hero section -->
+        <section class="hero" id="home">
+            <div class="hero-img">
+                <!-- Avatar image -->
+                <img src="/img/avatar.jpeg" alt="avatar">
+            </div>
+            <div class="hero-text">
+                <!-- Brief description -->
+                <h4>Hi there! <span id="hi">👋🏼</span></h4>
+                <h1>I'm <span>Mitchelle Mora</span></h1>
+                <p>Explore my world of creativity and design</p>
+            </div>
+            <div class="hero-btn">
+                <!-- Button linking to the "About me" section -->
+                <a type="button" href="#aboutme">About me <i class="fas fa-arrow-down"></i></a>
+            </div>
+        </section>
+
+        <section class="about-me-container" id="aboutme">
+            <h2>So, Who am I?...</h2>
+            <!-- Section for explaining why to hire me -->
+            <section class="why-hire-me">
+                <!-- Image of me -->
+                <div class="why-hire-me-img">
+                    <img src="./img/profile-photo.jpeg" alt="profile-img">
+                </div>
+                <div class="why-hire-me-text">
+                    <h2 class="why-hire-me-title">Why hire me?</h2>
+                     <!-- Detailed description of my professional background and skills -->
+                    <p>My name is <span>Mitchelle Mora</span>, I am a professional in <span>Social Communication -
+                            Journalism</span> with more than <span>6 years of experience</span> in the educational
+                        sector, developing my skills as a communicator in international events, combining communication,
+                        design and IT support. I am currently studying Interactive Media Design at Seneca College in
+                        Toronto, Canada. Thanks to this, I have been able to offer my clients not only a wide range of
+                        services, but also <span>certified experience</span> in which I have developed competencies in
+                        softwares such as <span>Adobe Illustrator, Adobe Photoshop, HTML, CSS and Javascript and After
+                            Effects.</span> I am passionate about higher education and how, through technology, we can
+                        bring us closer to it and facilitate the learning process. </p>
+
+                </div>
+            </section>
+
+             <!-- Section for showcasing my software skills -->
+            <section class="skills">
+                <h2>My Top Skills</h2>
+                <div class="skills-info-container">
+                    <!-- Individual skill levels with images and progress bars -->
+                    <div class="skill-level skill-ai">
+                        <img src="/logos/illustrator.png" alt="logo-adobe-illustrator">
+                        <div class="progress">
+                            <div class="progress-level">80%</div>
+                        </div>
+                    </div>
+                    <div class="skill-level skill-ps">
+                        <img src="/logos/photoshop.png" alt="logo-adobe-photoshop">
+                        <div class="progress">
+                            <div class="progress-level">70%</div>
+                        </div>
+                    </div>
+                    <div class="skill-level skill-ae">
+                        <img src="/logos/after-effects.png" alt="logo-after-effects">
+                        <div class="progress">
+                            <div class="progress-level">60%</div>
+                        </div>
+                    </div>
+                    <div class="skill-level skill-html">
+                        <img src="/logos/html-5.png" alt="logo-html">
+                        <div class="progress">
+                            <div class="progress-level">50%</div>
+                        </div>
+                    </div>
+                    <div class="skill-level skill-css">
+                        <img src="/logos/css-3.png" alt="logo-css">
+                        <div class="progress">
+                            <div class="progress-level">60%</div>
+                        </div>
+                    </div>
+                    <div class="skill-level skill-js">
+                        <img src="/logos/javascript.png" alt="logo-js">
+                        <div class="progress">
+                            <div class="progress-level">20%</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section for presenting my services -->
+            <section class="services">
+                <!-- Text explaining my services -->
+                <div class="services-text-container">
+                    <h2>Services</h2>
+                    <p> Explore my services and bring your online presence to life. I offer creative and technical
+                        solutions to turn your ideas into impactful digital experiences. Let's create something amazing
+                        together!</p>
+                </div>
+                 <!-- Cards representing different services -->
+                <div class="services-cards-container">
+                    <!-- Individual service card with image, title, and description -->
+                    <div class="service-card">
+                        <div class="service-card-img">
+                            <img src="./img/service1.jpg" alt="color palette">
+                        </div>
+                        <h4>Brand design</h4>
+                        <p>I help to identify and give life to your brand with a design that is not only beautiful, but
+                            that communicates according to your objectives through the creation of a brand manual.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-img">
+                            <img src="./img/service2.jpg" alt="Man editing on computer">
+                        </div>
+                        <h4>Video editing and animation</h4>
+                        <p>Elevate your videos with our professional touch and unlock the full potential of your visual
+                            storytelling.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-img">
+                            <img src="./img/service3.jpg" alt="Woman organizing tasks in her agenda">
+                        </div>
+                        <h4>Design, management and organization of corporate events</h4>
+                        <p>I turn visions into seamless experiences, ensuring every detail is meticulously executed for
+                            success.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-img">
+                            <img src="./img/service4.jpg" alt="A person establishing organizational connections on a board">
+                        </div>
+                        <h4>External consultant for transversal communication</h4>
+                        <p>We optimize connections across organizational functions, ensuring cohesive messaging and
+                            effective collaboration for success.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Section for the main gallery -->
+        <section class="gallery" id="gallery">
+            <!-- Text container introducing the gallery -->
+            <div class="gallery-text-container">
+                <h2>Welcome to my gallery! </h2>
+                <p>Join me in this photographic exploration, where every frame narrates a unique tale from the diverse
+                    events that have shaped my professional path</p>
+            </div>
+            <!-- Container for the gallery grid -->
+            <section class="gallery-grid-container">
+                <!-- Individual gallery cards with images and titles -->
+                <article class="gallery-card">
+                    <img src="./img/Mesa de trabajo 30_1.jpg" alt="CAEI2021-dates" loading="lazy">
+                    <h5 class="gallery-card-title">CAEI 2021</h5>
+                </article>
+                <article class="gallery-card">
+                    <img src="./img/Mesa de trabajo 6.png" alt="CIKI2022-themes" loading="lazy">
+                    <h5 class="gallery-card-title">CIKI 2022</h5>
+                </article>
+                <article class="gallery-card">
+                    <img src="./img/Mesa de trabajo 7-100.jpg" alt="CIKI2022-speaker" loading="lazy" class="gallery-img">
+                    <h5 class="gallery-card-title">CIKI 2022</h5>
+                </article>
+                <article class="gallery-card">
+                    <img src="./img/Mesa de trabajo 8-100.jpg" alt="CIKI2022-speaker" loading="lazy">
+                    <h5 class="gallery-card-title">CIKI 2022</h5>
+                </article>
+                <article class="gallery-card">
+                    <img src="./img/Mesa de trabajo 9-100.jpg" alt="CIKI2022-speaker" loading="lazy">
+                    <h5 class="gallery-card-title">CIKI 2022</h5>
+                </article>
+                <article class="gallery-card">
+                    <img src="./img/Mesa de trabajo 10-100.jpg" alt="CIKI2022-speaker" loading="lazy">
+                    <h5 class="gallery-card-title">CIKI 2022</h5>
+                </article>
+                <article class="gallery-card">
+                    <img src="./img/Mesa de trabajo 11-100.jpg" alt="CIKI2022-speaker" loading="lazy">
+                    <h5 class="gallery-card-title">CIKI 2022</h5>
+                </article>
+                <article class="gallery-card">
+                    <img src="./img/Mesa de trabajo 12-100.jpg" alt="CIKI2022-speaker" loading="lazy">
+                    <h5 class="gallery-card-title">CIKI 2022</h5>
+                </article>
+                <article class="gallery-card">
+                    <img src="./img/Mesa de trabajo 13-100.jpg" alt="CIKI2022-speaker" loading="lazy">
+                    <h5 class="gallery-card-title">CIKI 2022</h5>
+                </article>
+                <article class="gallery-card">
+                    <img src="./img/Mesa de trabajo 14-100.jpg" alt="CIKI2022-speaker" loading="lazy">
+                    <h5 class="gallery-card-title">CIKI 2022</h5>
+                </article>
+                <article class="gallery-card">
+                    <img src="./img/Mesa de trabajo 15-100.jpg" alt="CIKI2022-speaker" loading="lazy">
+                    <h5 class="gallery-card-title">CIKI 2022</h5>
+                </article>
+                <article class="gallery-card">
+                    <img src="./img/CAEI-2023-JUNE-18.png" alt="CAEI2023-schedule" loading="lazy">
+                    <h5 class="gallery-card-title">CAEI 2023</h5>
+                </article>
+            </section>
+        </section>
+
+        <!-- Section for the contact form -->
+        <section class="contact-container" id="contact">
+            <h2>Contact me!</h2>
+            <!-- Container for the contact form -->
+            <div class="contact-form-container">
+                <!-- Individual contact form -->
+                <div class="contact-form">
+                     <!-- Form for submitting contact information -->
+                    <form action="/" id="myForm" onsubmit="return validateForm()">
+
+                        <!-- Input fields for name -->
+                        <div class="inputs-form">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="sender-name" placeholder="Enter your name"
+                                onfocus="highlightInput('name') ; soundPlay()" onblur="resetInput('name')"
+                                class="input-field" required />
+                            <!-- Highlight input and play sound on focus and reset input on blur -->
+                        </div>
+
+                        <!-- Input fields for email -->
+                        <div class="inputs-form">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="sender-email" placeholder="Enter your email"
+                                onfocus="highlightInput('email') ; soundPlay()" onblur="resetInput('email')"
+                                class="input-field" required />
+                        </div>
+
+                        <!-- Input field for message -->
+                        <div class="inputs-form">
+                            <label for="message">Message</label>
+                             <!-- Text area for entering the message -->
+                            <textarea id="message" cols="60" rows="5" placeholder="Enter your message" name="mensaje"
+                                onfocus="highlightInput('message'); soundPlay()" onblur="resetInput('message')"
+                                class="input-field" required></textarea>
+                        </div>
+                        <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section at the bottom of the page -->
+    <footer>
+        <!-- Navigation links in the footer -->
+        <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <p class="copyright">© 2023 Copyright</p>
+
+        <!-- Back to top arrow link -->
+        <a href="#" class="arrow-up"><i class="fas fa-arrow-up"></i></a>
+
+    </footer>
+
+    <!-- Including the custom JavaScript file for additional functionality -->
+    <script src="index.js"></script>
+</body>
+
+</html>

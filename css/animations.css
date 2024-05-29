@@ -1,0 +1,80 @@
+@keyframes wave {
+
+    /* Initial position */
+    0%,
+    50%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    /* Waving positions */
+    25% {
+        transform: rotate(45deg);
+    }
+
+    75% {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    /* Gradual appearance and reduced translation */
+    25% {
+        opacity: 0.5;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes tracking-in-expand {
+
+    /* Initial state with negative letter spacing and no opacity */
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    /* Partial opacity during the animation */
+    40% {
+        opacity: 0.6;
+    }
+
+    /* Full opacity at the end of the animation */
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slide-in-top {
+
+    /* Initial state above the viewport with zero opacity */
+    0% {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    /* Fully visible and translated to its final position */
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

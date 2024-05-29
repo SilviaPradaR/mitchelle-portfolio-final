@@ -1,0 +1,639 @@
+/* Importing Google Fonts Poppins and Roboto with different weights */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;400&display=swap');
+
+/* Set smooth scrolling behavior for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset default margin, padding, and box-sizing for all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting the default font for the body */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Removing default list styling for unordered lists */
+ul {
+    list-style-type: none;
+}
+
+/* Removing default text decoration for anchor tags */
+a {
+    text-decoration: none;
+}
+/* Apply a margin to paragraphs for better spacing */
+p {
+    margin-bottom: 16px;
+}
+/*--------------------------------------NAVBAR------------------------------------*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 56px;
+    width: 100%;
+    background-color: #fcfcfc;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h4 {
+    margin-bottom: 0px;
+}
+
+.navigation-bar {
+    display: flex;
+    margin-bottom: 0px !important;
+    gap: 30.4px;
+   
+}
+
+/* Styling for the underline effect on navigation bar links */
+.navigation-bar a:after {
+    content: "";
+    background-color: #ac009d;
+    height: 3px;
+    width: 0;
+    bottom: 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+.navigation-bar a:hover {
+    color: #c95e9c;
+}
+
+/* Expanding the underline on hover */
+.navigation-bar a:hover::after {
+    width: 100%;
+}
+
+/* Styling for the check button (for responsive navigation) */
+.checkbtn {
+    font-size: 20px;
+    color: #000;
+    float: right;
+    cursor: pointer;
+    display: none; /* Initially hide the check button */
+}
+
+/* Styling for the checkbox input (for responsive navigation) */
+#check {
+    display: none; /* Initially hide the checkbox input */
+}
+
+/*--------------------------------------HERO--------------------------------------*/
+.hero{
+    width: 100%;
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-image:url(../img/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.hero .hero-img{
+    height: 180px;
+    width: 180px;
+    animation: slide-in-top 1s ease both; /* Apply a sliding animation */
+}
+
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border: 4px solid white;
+}
+.hero-text{
+    text-align: center;    
+}
+.hero-text h4{
+    font-size: 30px;
+    animation: tracking-in-expand 0.7s both 0.5s; /* Apply a tracking animation */
+    
+}
+.hero-text h1{
+    font-size: 56px;
+    animation: tracking-in-expand 0.7s both 1s; /* Apply a tracking animation */
+}
+.hero-text #hi{
+    display: inline-block;
+    font-size: 40px;
+    animation: wave 0.8s linear 1s both;
+
+}
+.hero-text span{
+    color: rgb(112, 0, 160);    
+   
+}
+.hero-text p{
+    font-size: 21px;
+    animation: tracking-in-expand 0.7s both 1.5s;
+}
+.hero-btn{
+    animation: scale-up-center 0.7s ease-in both 1.5s;
+}
+.hero-btn a {
+    background: rgb(130, 36, 170);
+    padding: 7px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;    
+}
+
+.hero-btn a:hover {
+    color: rgb(226, 173, 245);
+}
+
+/* Styling for the icon within the button */
+.hero-btn i {
+    background: #dd96dd;
+    padding: 3px 5px;
+    border-radius: 50%;
+}
+/*------------------------------------ABOUT ME------------------------------------*/
+.about-me-container{
+    width: 100%;
+    height: auto;    
+     /* Radial gradient background */
+    background: radial-gradient(circle, rgba(236,195,236,1) 0%, rgba(186,204,226,1) 100%);    
+}
+.about-me-container >h2{
+    text-align: center;
+    font-size: 36px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+/*-------------------------------ABOUT ME - WHY HIRE ME---------------------------*/
+.why-hire-me{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+.why-hire-me-img{
+    width: 40%;
+    text-align: center;
+    max-width: 570px;
+}
+.why-hire-me-img img{
+    width: 60%;
+    object-fit: contain; /* The image is contained within its container */
+    border-radius: 20px; 
+    box-shadow: 0 3px 10px #656a9f;
+    
+}
+.why-hire-me-text{
+    width: 50%;
+    max-width: 670px;
+}
+
+.why-hire-me-text p{
+    padding: 30px 0;
+}
+.why-hire-me-text p span{
+    color: purple;
+    font-weight: bold;
+}
+/*-------------------------------ABOUT ME - SKILLS--------------------------------*/
+.skills{
+    width: 100%;
+    height: auto;
+    padding: 40px 30px;
+}
+.skills h2{
+    text-align: center;
+}
+.skills-info-container{
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if space is not sufficient */
+    justify-content: center;
+    width: 100%;  
+    row-gap: 30px;
+    column-gap: 60px;  
+    margin-top: 20px;
+}
+.skill-level{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;    
+    padding: 15px;
+}
+.skill-level img{
+    width: 25%;
+    height: 100%;
+    object-fit: contain;
+}
+.progress{
+    width: 100%;
+    height: 18px;
+    background-color: lightgray;
+    border-radius: 20px;
+    margin-left: 7px;
+}
+.progress-level{
+    background-color: #ac009d;
+    border-radius: 20px;
+    height: 100%;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+.skill-html .progress-level{
+    width: 50%;
+}
+.skill-css .progress-level{
+    width: 60%;
+}
+.skill-js .progress-level{
+    width: 20%;
+}
+.skill-ai .progress-level{
+    width: 80%;
+}
+.skill-ps .progress-level{
+    width: 70%;
+}
+.skill-ae .progress-level{
+    width: 60%;
+}
+
+/*-------------------------------ABOUT ME - SERVICES-----------------------------*/
+.services{
+    width: 100%;
+    height: auto;
+   background-color: whitesmoke;
+}
+.services-text-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 60px;   
+    padding: 40px;
+}
+.services-text-container p{
+    width: 60%;
+}
+.services-cards-container{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 209, 221);
+    padding: 50px 20px;
+    gap: 30px;
+
+}
+.service-card{
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 400px;
+    padding: 10px;
+    text-align: center;
+}
+.service-card:hover{
+    background-color: rgb(158, 186, 219);
+}
+.service-card h4{
+    font-size: 14px;
+    text-align: center;
+}
+
+.service-card-img{
+    width: 100%;
+    height: 200px;
+    margin: 10px 0;    
+}
+.service-card-img img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover; /* The image is covered within its container */   
+    border-radius: 5px; 
+}
+.service-card p{
+    font-size: 12px;
+    text-align: justify;
+    padding: 20px 20px 4px;
+}
+
+/*-----------------------------------GALLERY-------------------------------------*/
+.gallery{
+    width: 100%;
+    height: auto;
+    background-image: url(../img/bg-gallery.jpg);
+    background-size: cover;
+    background-repeat: repeat-y; /* Repeat the background image vertically */
+    padding-top: 100px;
+}
+.gallery-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-text-container h2{
+    font-size: 36px;
+    text-align: center;
+}
+.gallery-text-container p{
+    width: 60%;
+    text-align: center;
+    margin-top: 20px;
+}
+.gallery-grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Grid with 4 columns */
+    grid-auto-rows: 1fr; /* Automatically size rows based on content */
+    gap: 50px;
+    align-items: stretch; /* Stretch items to fill the container vertically */
+    padding: 40px 60px;
+}
+.gallery-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out; /* Add smooth transition effect */
+}
+.gallery-card img{
+    width: 100%;
+    object-fit: contain;    
+}
+.gallery-card-title {
+    opacity: 0; /* Set initial opacity to 0 (hidden) */    
+    transition: opacity 0.5s ease-in-out; /* Add smooth transition effect for opacity */
+    padding: 10px;
+}
+
+/*------------------------------------FORM---------------------------------------*/
+.contact-container {
+    padding-bottom: 60px;
+    padding-top: 100px;
+    background-color: #fcf8fb;
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 36px;
+    font-size: 35px;
+}
+
+.contact-form-container {
+    max-width: 30%;
+    margin: 0 auto; /* Center the form container horizontally */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px #a17a69; /* subtle box shadow */
+}
+
+.contact-form-container label {
+    line-height: 2.7em;
+    font-weight: 700;
+    color: #4756df;
+}
+
+.contact-form-container textarea {
+    min-height: 100px;
+    font-size: 14px;
+}
+
+.contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px solid #dd96dd;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-field::placeholder {
+    color: #4756df;
+}
+
+.highlight-input {
+    border: 2px solid #c95e9c !important; /* border color on focus */
+    background-color: #ffe6ff; /* background color on focus */
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid #dd96dd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #d879d8;
+    border: 2px solid #d879d8;
+    cursor: pointer;
+}
+
+/*-------------------------------------FOOTER------------------------------------*/
+footer {
+    padding: 30px;
+    background-color: #8b8eaf94;
+    color: #5a60a1;
+}
+
+.footer-links {
+    display: flex; /* to arrange the links in a horizontal row */
+    justify-content: center;
+    gap: 48px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #5a60a1;
+}
+
+.footer-links a:hover {
+    color: #474da1;
+}
+
+.arrow-up {
+    background: rgb(87, 0, 87);
+    padding: 5px;
+    border-radius: 20px;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    right: 1.5%;
+    bottom: 8%;
+    color: white;
+}
+
+.arrow-up:hover {
+    color: #dae6fc;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(153, 153, 153);
+}
+
+
+/*---------------------------------MEDIA QUERIES---------------------------------*/
+
+/* Media query for screens with a maximum width of 1024px */
+@media screen and (max-width: 1024px) {
+    /* Adjust layout for "Why Hire Me" section*/
+    .why-hire-me{
+        flex-direction: column;        
+        align-items: center;
+    }
+    /* Adjust grid layout for gallery*/
+    .gallery-grid-container{
+        grid-template-columns: repeat(3, 1fr);
+    }    
+    .why-hire-me-text{
+        width: 60%;
+        text-align: justify;
+    }
+    .why-hire-me-title{
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+/* Media query for screens with a maximum width of 720px */
+@media screen and (max-width: 720px) {
+    /* Display the check button for responsive navigation */
+    .checkbtn {
+        display: block;
+    }
+
+    /* Styles for the responsive navigation menu */
+    #menu-links {
+        top: 65px;
+        left: -100%;
+        display: block;
+        text-align: center;
+        transition: all .5s;
+        position: fixed;
+        width: 100%;
+        background-color: #c19acb;
+        padding-left: 0;
+    }
+
+    /* Styles for list items in the responsive navigation menu */
+    #menu-links li {
+        margin: 50px 0;
+        line-height: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* Slide-in animation for the navigation menu when the checkbox is checked */
+    #check:checked~ul {
+        left: 0;
+    }
+    .why-hire-me-img{
+        width: 50%;
+    }
+    .why-hire-me-img img{
+        width: 100%;
+    }
+    /* Adjust layout for skills section*/
+    .skills-info-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    /* Adjust layout for services*/
+    .services-text-container{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .services-text-container h2{
+        text-align: center;
+    }
+    .services-text-container p{
+        width: 100%;
+    }
+    /* Adjust grid layout for gallery*/
+    .gallery-grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-form-container {
+        max-width: 60%;
+    }
+
+     /* Adjust layout for footer links*/
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding-left: 0px;
+    }
+
+    /* Hide the arrow-up button on small screens */
+    .arrow-up {
+        display: none;
+    }
+
+    /* Change link color on hover in the navigation bar on small screens */
+    .navigation-bar a:hover {
+        color: white;
+    }
+}
+
+/* Media query for screens with a maximum width of 520px */
+@media screen and (max-width: 520px) {
+    .hero-text h1{
+        font-size: 30px;
+    }
+    .hero-text p{
+        font-size: 16px;
+    }
+    .gallery-grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .gallery-text-container p{
+        width: 80%;
+    }
+}
+
+/* Media query for screens with a maximum width of 320px */
+@media screen and (max-width: 320px) {    
+    .about-me-container > h2, .gallery-text-container h2, .contact-container h2{
+        font-size: 30px;    }
+    
+    .skill-level{
+        width: 250px;
+    }    
+}
+
+
+
